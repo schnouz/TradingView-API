@@ -351,7 +351,7 @@ module.exports = {
       {
         validateStatus,
         headers: {
-          referer: 'https://fr.tradingview.com',
+          referer: 'https://www.tradingview.com',
           'Content-Type': 'application/x-www-form-urlencoded',
           'User-agent': `${UA} (${os.version()}; ${os.platform()}; ${os.arch()})`,
         },
