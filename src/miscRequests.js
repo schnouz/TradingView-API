@@ -351,7 +351,7 @@ module.exports = {
       {
         validateStatus,
         headers: {
-          referer: 'https://www.tradingview.com',
+          referer: 'https://www.fr.tradingview.com',
           'Content-Type': 'application/x-www-form-urlencoded',
           'User-agent': `${UA} (${os.version()}; ${os.platform()}; ${os.arch()})`,
         },
@@ -394,7 +394,7 @@ module.exports = {
    * @param {string} [location] Auth page location (For france: https://fr.tradingview.com/)
    * @returns {Promise<User>} Token
    */
-  async getUser(session, signature = '', location = 'https://www.tradingview.com/') {
+  async getUser(session, signature = '', location = 'https://www.fr.tradingview.com/') {
     const { data } = await axios.get(location, {
       validateStatus,
       headers: {
