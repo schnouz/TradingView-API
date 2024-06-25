@@ -9,7 +9,7 @@ const studyConstructor = require('./study');
 
 const ChartTypes = {
   HeikinAshi: 'BarSetHeikenAshi@tv-basicstudies-60!',
-  Renko: 'BarSetRenko@tv-prostudies-40!',
+  Renko: 'BarSetRenko@tv-prostudies-73!',
   LineBreak: 'BarSetPriceBreak@tv-prostudies-34!',
   Kagi: 'BarSetKagi@tv-prostudies-34!',
   PointAndFigure: 'BarSetPnF@tv-prostudies-34!',
@@ -348,6 +348,8 @@ module.exports = (client) => class ChartSession {
     const symbolInit = {
       symbol: symbol || 'BTCEUR',
       adjustment: options.adjustment || 'splits',
+      "currency-id": "XTVCUSDT",
+      session: "regular"
     };
 
     if (options.session) symbolInit.session = options.session;
