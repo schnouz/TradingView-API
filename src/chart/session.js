@@ -348,8 +348,6 @@ module.exports = (client) => class ChartSession {
     const symbolInit = {
       symbol: symbol || 'BTCEUR',
       adjustment: options.adjustment || 'splits',
-      "currency-id": "XTVCUSDT",
-      session: "regular"
     };
 
     if (options.session) symbolInit.session = options.session;
